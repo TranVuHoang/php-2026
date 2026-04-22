@@ -147,3 +147,51 @@ if(print("Hello, PHP")) {
 }
 ?>
 ```
+
+## Bài 6: Lưu ý khi viết code PHP
+
+Kết thúc mỗi dòng code phải có dấu (;) để kết thúc dòng code
+
+## Bài 7: Biến (variable) PHP
+
+`2. Biến trong PHP`
+
+```
+Biến trong PHP là một vùng nhớ được đặt tên để lưu trữ dữ liệu.
+Biến trong PHP bắt đầu bằng ký tự $ theo sau tên biến.
+```
+
+Quy tắc đặt tên biến:
+
+```
+- Biến bắt đầu bằng ký tự $.
+- Chỉ chứa chữ cái, số và dấu gạch dưới(_), không được chứa dấu cách.
+- Biến phân biệt chữ hoa và chữ thường ($name khác $Name).
+- Không được dùng từ khoá PHP làm tên biến
+```
+
+Ví dụ:
+
+```php
+$username = "Hoàng Trần";
+$email ="hoangtran@gmail.com";
+```
+
+## Bài 8: Hằng số trong PHP
+
+` 3. Hằng số trong PHP`
+
+Hằng số là biên đặc biệt có giá trị không thay đổi trong suốt quá trình thực thi.
+Không cần dùng $ khi gọi hằng số.
+
+Cách khai báo hằng số:
+
+```php
+/# Cách 1: dùng fefine()
+define("SITE_NAME", "tranvuhoang.github.io");
+echo SITE_NAME; //Output: tranvuhoang.github.io
+
+#Cách 2: dùng const
+const _PI = 3.14;
+echo _PI; // output: 3.14
+```
