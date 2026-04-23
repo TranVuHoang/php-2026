@@ -152,46 +152,34 @@ if(print("Hello, PHP")) {
 
 Kết thúc mỗi dòng code phải có dấu (;) để kết thúc dòng code
 
-## Bài 7: Biến (variable) PHP
-
-`2. Biến trong PHP`
+## Bài 9: Kiểu dữ liệu trong PHP - Phần 1
 
 ```
-Biến trong PHP là một vùng nhớ được đặt tên để lưu trữ dữ liệu.
-Biến trong PHP bắt đầu bằng ký tự $ theo sau tên biến.
++ Kiểu chuỗi (string): là một dãy ký tự được đặt trong dấu nháy đơn (' ') hoặc nháy kép (" ")
+
++ Sự khác nhau giữa nháy đơn và nháy kép:
+
+" " hỗ trợ nội suy biến ($variable bên trong sẽ được thay thế bằng giá trị thực).
+' ' không hỗ trợ nội suy biến, hiển thị nguyên văn bản.
 ```
 
-Quy tắc đặt tên biến:
+## Bài 10: Kiểu dữ liệu trong PHP - Phần 2
 
-```
-- Biến bắt đầu bằng ký tự $.
-- Chỉ chứa chữ cái, số và dấu gạch dưới(_), không được chứa dấu cách.
-- Biến phân biệt chữ hoa và chữ thường ($name khác $Name).
-- Không được dùng từ khoá PHP làm tên biến
-```
+- Kiểu số nguyên (Integer)
+  Số nguyên trong PHP là số không có phần thập phân.
 
-Ví dụ:
+Hàm var_dump(): là một hàm trong PHP dùng để xuất thông tin chi tiết về một biến
 
-```php
-$username = "Hoàng Trần";
-$email ="hoangtran@gmail.com";
-```
+- Kiểu số thực (Float hoặc Double): Là số có phần thập phân hoặc số mũ.
 
-## Bài 8: Hằng số trong PHP
+- Kiểu Boolean (true/ false)
+  - Chỉ có hai giá trị: true hoặc false. Dùng trong kiểm tra điều kiện.
+  - Các giá trị sau đây được coi là false: false, 0 hoặc "0", ""(chuỗi rỗng), NULL
+    [] (mảng rỗng)
+    | NULL: là một biến không có giá trị hợp lệ.
 
-` 3. Hằng số trong PHP`
-
-Hằng số là biên đặc biệt có giá trị không thay đổi trong suốt quá trình thực thi.
-Không cần dùng $ khi gọi hằng số.
-
-Cách khai báo hằng số:
-
-```php
-/# Cách 1: dùng fefine()
-define("SITE_NAME", "tranvuhoang.github.io");
-echo SITE_NAME; //Output: tranvuhoang.github.io
-
-#Cách 2: dùng const
-const _PI = 3.14;
-echo _PI; // output: 3.14
-```
+- Kiểu Mảng (Array): Mảng là tập hợp của nhiều giá trị.
+Có 3 lại mảng trong PHP:
+- Mảng chỉ mục số (intexed array)
+- Mảng kết hợp (associative array)
+- Mảng đa chiều (multidimensional array)

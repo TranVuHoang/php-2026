@@ -10,9 +10,3 @@ echo "Giá trị của biến 2 = $bien_so_2 <br/>";
 
 $php = 100;
 echo "Giá trị biến php = $php";
-
-# Hằng số:
-
-define("SITE_NAME", "Vietnam");
-const _PI = 3.14;
-echo "<br />". SITE_NAME . _PI;
