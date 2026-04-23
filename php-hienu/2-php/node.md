@@ -200,3 +200,18 @@ if ($age >= 18) {
 ```
 
 Kết quả: Bạn chưa đủ tuổi để lái xe
+
+## Bài 15: Toán tử 3 ngôi và câu điều kiện if lồng nhau
+
+Toán tử ba ngôi: giúp viết if-else ngắn gọn hơn.
+Cú pháp:
+
+`(biểu_thức_điều_kiện) ? giá_trị_nếu_đúng : giá_trị_nếu_sai;`
+
+ví dụ:
+
+```php
+$age = 20;
+$message = ($age >= 18) ? "Bạn đủ tuổi lái xe" : "Bạn chư đủ tuổi";
+echo $message;
+```
