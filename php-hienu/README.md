@@ -255,3 +255,19 @@ ví dụ:
   echo $a + $b; // 14
 ?>
 ```
+
+## Bài 12: Các loại Toán tử PHP - Phần 2
+
+`3. Toán tử so sánh (Comparison Operators)`
+
+```
+== : bằng nhau về giá trị
+===: bằng nhau cả về giá trị và kiểu dữ liệu
+!= : khác nhau về giá trị
+<> : khác nhau về giá trị
+ !==: khác nhau về giá trị lẫn kiểu
+ >: lớn hơn
+ <: Nhỏ hơn
+ >= : lớn hơn hoặc bằng
+ <=: Nhỏ hơn hoặc bằng
+```
