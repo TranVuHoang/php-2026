@@ -201,17 +201,102 @@ if ($age >= 18) {
 
 Kết quả: Bạn chưa đủ tuổi để lái xe
 
-## Bài 15: Toán tử 3 ngôi và câu điều kiện if lồng nhau
+## Bài 16: Câu lệnh điều kiện Switch - case
 
-Toán tử ba ngôi: giúp viết if-else ngắn gọn hơn.
-Cú pháp:
+`6. Câu lệnh điều kiện switch-case`
 
-`(biểu_thức_điều_kiện) ? giá_trị_nếu_đúng : giá_trị_nếu_sai;`
+Câu lệnh switch-case trong PHP được dùng để kiểm tra một biến với nhiều giá trị
+khác nhau. Nó giúp thay thế if-else trong TH có nhiều điều kiện cần kiểm tra với
+cùng 1 biến.
 
-ví dụ:
+`🧠 Cú pháp switch trong PHP`
 
 ```php
-$age = 20;
-$message = ($age >= 18) ? "Bạn đủ tuổi lái xe" : "Bạn chư đủ tuổi";
-echo $message;
+<?php
+switch ($variable) {
+    case value1:
+        // code
+        break;
+    case value2:
+        // code
+        break;
+    default:
+        // code nếu không khớp
+}
+?>
 ```
+
+`📌 Ví dụ đơn giản`
+
+```php
+<?php
+$day = 3;
+
+switch ($day) {
+    case 1:
+        echo "Monday";
+        break;
+    case 2:
+        echo "Tuesday";
+        break;
+    case 3:
+        echo "Wednesday";
+        break;
+    default:
+        echo "Invalid day";
+}
+?>
+```
+
+👉 Kết quả: Wednesday
+
+<hr />
+
+`⚠️ Lưu ý quan trọng`
+
+❗ 1. Phải có break; giúp kết thúc switch-case, nếu không có break, chương trình sẽ chạy tiếp
+case sau.
+Nếu không sẽ bị chạy xuyên xuống case dưới:
+
+```php
+<?php
+$number = 1;
+
+switch ($number) {
+    case 1:
+        echo "One";
+    case 2:
+        echo "Two";
+}
+?>
+```
+
+👉 Output: OneTwo (lỗi logic)
+
+`❗ 2. default giống else`
+
+- Chạy khi không case nào đúng
+
+🔥 Ví dụ thực tế
+
+```php
+<?php
+$role = "admin";
+
+switch ($role) {
+    case "admin":
+        echo "Full access";
+        break;
+    case "user":
+        echo "Limited access";
+        break;
+    default:
+        echo "Guest";
+}
+?>
+```
+
+`🎯 Khi nên dùng switch?`
+
+- So sánh 1 biến với nhiều giá trị cụ thể
+- Code dễ đọc hơn if...else dài dòng
