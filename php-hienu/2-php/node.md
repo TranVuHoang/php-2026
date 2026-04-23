@@ -163,3 +163,40 @@ Dùng để kết hợp các điều kiện logic
         </tr>
       </tbody>
 </table>
+
+## Bài 14: Câu lệnh điều kiện if-else
+
+`6. Câu lệnh điều kiện if-else`
+
+Câu lệnh điều kiện `if-else` trong PHP được sử dụng để kiểm tra một điều kiện và
+thực hiện các khối mã khác nhau trên kết quả của điều kiện đó.
+
+Câu lệnh if đơn giản: câu lệnh if sẽ thực thi một khối mã nếu đk là true.
+
+ví dụ câu lệnh if:
+
+```php
+$age = 18;
+
+if ($age >= 18) {
+  echo "Bạn đủ tuổi để lái xe!";
+}
+```
+
+Giải thích:
+Nếu `$age >=18`, câu lệnh trong {} sẽ được thực hiện. <br />
+Ngược lại, nếu `$age < 18`, không có gì xảy ra.
+
+ví dụ câu lệnh if:
+
+```php
+$age = 16;
+
+if ($age >= 18) {
+  echo "Bạn đủ tuổi để lái xe!";
+} else {
+  echo "Bạn chưa đủ tuổi để lái xe";
+}
+```
+
+Kết quả: Bạn chưa đủ tuổi để lái xe
