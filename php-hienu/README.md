@@ -224,3 +224,34 @@ Hàm var_dump(): là một hàm trong PHP dùng để xuất thông tin chi ti�
 - Mảng chỉ mục số (intexed array)
 - Mảng kết hợp (associative array)
 - Mảng đa chiều (multidimensional array)
+
+## Bài 11: Các loại Toán tử PHP - Phần 1
+
+`5. Toán tử trong PHP`
+
+Toán tử trong PHP là các ký hiệu hoặc từ khoá dùng để thực hiện phép toán trên
+biến và giá trị.
+
+PHP hỗ trợ 5 nhóm toán tử chính:
+
+```
+1. Toán tử số học (arthmetic operators)
+2. Toán tử gán (Assigment Operators)
+3. Toán tử so sánh (Comparison Operators)
+4. Toán tử logic (Logical Operators)
+5. Toán tử tăng/ giảm (Increment/Decrement Operators)
+```
+
+`1. Toán tử số học`
+
+Dùng để thực hiện các phép toán cơ bản: +, -, x, /, %
+
+ví dụ:
+
+```php
+<?php
+  $a = 10;
+  $b = 4;
+  echo $a + $b; // 14
+?>
+```
