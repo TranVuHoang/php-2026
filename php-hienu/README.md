@@ -271,3 +271,84 @@ ví dụ:
  >= : lớn hơn hoặc bằng
  <=: Nhỏ hơn hoặc bằng
 ```
+
+## Bài 13: Các loại toán tử PHP - Phần 3
+
+`4. Toán tử logic (Logical Operators)`
+Dùng để kết hợp các điều kiện logic
+
+<table border="1" cellpadding="1px" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Toán tử</th>
+      <th>Mô tả</th>
+      <th>Ví dụ</th>
+      <th>Kết qủa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&& hoặc AND</td>
+      <td>Cả hai điều kiện đều đúng</td>
+      <td>(5 > 3) && (10 >5)</td>
+      <td>true</td>
+    </tr>
+    <tr>
+      <td>`</td>
+      <td></td>
+      <td>hoặc OR</td>
+      <td>Ít nhất 1 điều kiện đúng</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>Phủ định đảo ngược giá trị Boolean</td>
+      <td>!(5 > 3)</td>
+      <td>false</td>
+    </tr>
+    <tr>
+      <td>XOR</td>
+      <td>Một trong hai điều kiện đúng, nhưng không cả hai</td>
+      <td>(true XOR false)</td>
+      <td>true</td>
+    </tr>
+  </tbody>
+</table>
+
+` 5. Toán tử tăng/ giảm (Increment/Decrement)`
+
+<table border="1" cellpadding="1px" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Toán tử</th>
+          <th>Mô tả</th>
+          <th>Ví dụ</th>
+          <th>Kết qủa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>++$a</td>
+          <td>Tăng trước, rồi sử dụng</td>
+          <td>$a =. ; ++$a;</td>
+          <td>$a = 6</td>
+        </tr>
+        <tr>
+          <td>$a++</td>
+          <td>Sử dụng , rồi tăng</td>
+          <td>$a = 5; $b - $a++;</td>
+          <td>$a = 5; $b = 6</td>
+        </tr>
+        <tr>
+          <td>--$a</td>
+          <td>Giảm trước, rồi sử dụng</td>
+          <td>$a = 5; --$a;</td>
+          <td>$a = 4</td>
+        </tr>
+        <tr>
+          <td>$a--</td>
+          <td>Sử dụng trước, rồi giảm</td>
+          <td>$a = 5; $b = $a--;</td>
+          <td>true</td>
+        </tr>
+      </tbody>
+</table>
