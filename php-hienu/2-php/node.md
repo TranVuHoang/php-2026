@@ -300,3 +300,100 @@ switch ($role) {
 
 - So sánh 1 biến với nhiều giá trị cụ thể
 - Code dễ đọc hơn if...else dài dòng
+
+## Bài 17: Vòng lặp For
+
+Trong PHP có 4 loại vòng lặp chính bạn cần biết 👇
+
+`🔁 1. for (lặp có điều kiện rõ ràng)`
+
+```php
+<?php
+for ($i = 1; $i <= 5; $i++) {
+    echo $i . "<br>";
+}
+?>
+```
+
+👉 Dùng khi biết trước số lần lặp
+
+## Bài 18: Vòng lặp while và do-while
+
+`🔁 2. while (lặp khi còn đúng điều kiện)`
+
+```php
+// ví dụ 1
+<?php
+$i = 1;
+
+while ($i <= 5) {
+    echo $i . "<br>";
+    $i++;
+}
+?>
+
+// ví dụ 2
+$input = "";
+
+while ($input != "1234") {
+    $input = readline("Nhập mật khẩu: ");
+}
+```
+
+👉 Dùng khi không chắc số lần lặp
+
+`🔁 3. do...while (chạy ít nhất 1 lần)`
+
+```php
+<?php
+$i = 1;
+
+do {
+    echo $i . "<br>";
+    $i++;
+} while ($i <= 5);
+?>
+```
+
+👉 Luôn chạy ít nhất 1 lần dù điều kiện sai
+
+## Bài 19: Vòng lặp foreach
+
+`🔁 4. foreach (duyệt mảng)`
+
+```php
+<?php
+$fruits = ["Táo", "Cam", "Xoài"];
+
+foreach ($fruits as $fruit) {
+    echo $fruit . "<br>";
+}
+?>
+```
+
+👉 Dùng khi làm việc với array
+
+<hr />
+
+🔥 Ví dụ thực tế (foreach + key)
+
+```php
+<?php
+$students = [
+    "Hoang" => 9,
+    "An" => 8,
+    "Linh" => 10
+];
+
+foreach ($students as $name => $score) {
+    echo "$name: $score<br>";
+}
+?>
+```
+
+`🎯 Tóm tắt nhanh`
+
+- for: Biết số lần lặp
+- while: Lặp theo điều kiện
+- do...while: Muốn chạy ít nhất 1 lần
+- foreach: Duyệt mảng
