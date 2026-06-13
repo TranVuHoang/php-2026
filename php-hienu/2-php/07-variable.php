@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Biến trong php
  */
