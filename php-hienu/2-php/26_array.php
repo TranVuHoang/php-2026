@@ -5,7 +5,7 @@
  * -> 3 loại mảng
  *
  * 1. Mảng chỉ mục: index-value; index bắt đầu từ số 0
- * 2. Mảng kết hợp
+ * 2. Mảng kết hợp: key - value
  * 3. Mảng đa chiều
  */
 
@@ -41,6 +41,7 @@ $cars = [
 ];
 echo $cars["kia"];
 echo "<hr>";
+
 echo $cars["vinfast"];
 echo "<hr>";
 
@@ -53,4 +54,29 @@ $i = 1;
 foreach ($cars as $key => $car) {
   echo "$i. $key: $car <br />";
   $i++;
+}
+
+
+//------------------------------------------------------
+// #3. Mảng đa chiều
+//------------------------------------------------------
+$brands = [
+  "toyota"  => ["vios", "camry", "fortuner"],
+  "kia"     => ["morning", "selto"],
+  "huyndai" => ["cetafe", "tucson"],
+  "vinfast" => ["VF3", "VF5", "VF6", "VF7", "VF8", "VF9"],
+];
+echo "<pre>";
+print_r($brands);
+echo "</pre>";
+
+echo $brands["toyota"][0];
+
+// duyệt mảng đa chiều
+foreach ($brands as $key => $brand) {
+  echo "Hãng xe <strong>$key</strong> gồm: ";
+  foreach ($brand as $index => $item) {
+    echo $item . " ";
+  }
+  echo "<br>";
 }
