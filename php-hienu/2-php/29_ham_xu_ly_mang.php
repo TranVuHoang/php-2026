@@ -110,3 +110,14 @@ array_pop($languages);
 echo "<pre>";
 print_r($languages);
 echo "</pre>";
+
+//------------------------------------------------
+// # 9. array_unshi($array, $value)
+//------------------------------------------------
+$numbers = [1, 2, 3, 4, 5];
+// thêm 1 phần tử vào đầu của mảng
+array_unshift($numbers, 0);
+echo "<hr>";
+echo "<pre>";
+print_r($numbers);
+echo "</pre>";
